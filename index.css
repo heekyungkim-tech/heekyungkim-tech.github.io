@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.side-nav {
+  position: absolute;
+  width: 100%;
+  background-color: #35475e;
+  height: 100%;
+  z-index: 3;
+  padding-top: 45px;
+}
+.side-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.side-nav ul li {
+  padding: 20px 30px;
+  border-bottom: 1px solid #333;
+}
+.side-nav .active {
+    background-color: #241127;
+    border-left: 5px solid #198c19;
+}
+.side-nav ul li:active {
+    background-color: #241127;
+}
+.side-nav ul li i {
+  color: #198c19;
+}
+.side-nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+}
+.side-nav ul li a .fa {
+  margin-right: 0.8rem;
+}
+.side-nav ul li:hover {
+  background-color: #66b266;
+  border-left: 5px solid #198c19;
+}
+header{
+  position: absolute;
+  height: 44px;
+  width: 100%;
+  background-color: #35475e;
+  z-index: 4;
+  color: #fff;
+}
+.search-area{
+  display: inline;
+  margin-left:20%;
+}
+.user-area{
+  display: inline;
+  float: right;
+  padding: 10px;
+}
+.user-area a {
+  color: #1b1b1b;
+  display: inline;
+  padding-right: 20px;
+  text-decoration: none;
+  vertical-align: top;
+  height: 30px;
+  color: #fff;
+}
+.main-content{
+  padding-top: 44px;
+}
+.heading h1{
+  color: purple;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.heading {
+  margin-left: 20px;
+}
+.cards {
+	display: flex;
+	flex-flow: row wrap;
+  margin-bottom: 20px;
+}
+.card {
+	flex-basis: 300px;
+	flex-grow: 10;
+	height: 320px;
+	margin: 15px;
+	border-radius: 6px;
+	position: relative;
+  padding: 10px;
+}
+.card .title {
+	background-color: #eef1f7;
+	border-bottom: 1px solid #dfe4ec;
+	padding: 10px;
+	color: #617085;
+	font-weight: 600;
+}
+.card .user-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.user-name {
+  color: purple;
+  display: block;
+  text-align: center;
+}
+.user-title {
+  display: block;
+  text-align: center;
+}
+.major_minor{
+  padding: 0 15px;
+  font-size: 0.9rem;
+}
+.major_minor span{
+  font-weight: 600;
+  line-height: 30px;
+}
+.education-wrapper {
+  margin: 15px;
+}
+.school {
+  font-weight: 600;
+}
+.location, .date{
+  float: right;
+}
+/* tablet veresion */
+@media screen and (min-width: 600px) {
+  .side-nav {
+    width: 80px;
+  }
+  .side-nav ul li {
+    text-align: center;
+  }
+  .side-nav ul li span:nth-child(2){
+    display: none;
+  }
+  .side-nav ul li i {
+    font-size: 26px;
+  }
+  .main-content{
+    margin-left: 80px;
+  }
+}
+/* Desktop version */
+@media screen and (min-width: 1000px) {
+  .side-nav {
+    width: 200px;
+  }
+  .side-nav ul li {
+    text-align: left;
+  }
+  .side-nav ul li span:nth-child(2){
+    display: inline;
+  }
+  .side-nav ul li i {
+    font-size: 16px;
+  }
+  .main-content{
+    margin-left: 200px;
+  }
+}

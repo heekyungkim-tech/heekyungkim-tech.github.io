@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" >
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" type="text/text/css">
+    <title>Responsive dashboard-admin menu</title>
+  </head>
+  <body>
+    <header>
+      <div class="search-area">
+        <i class="fa fa-search"></i>
+        <input type="text" name="" value="">
+      </div>
+      <div class="user-area">
+        <a href="#" class="add">+ Add</a>
+        <a href="#" class="notification">
+          <i class= "fa fa-bell-o"></i>
+          <span class="circle"></span>
+        </a>
+        <a href="#">
+          <div class="user-img"></div>
+          <i class="fa fa-circle-down"></i>
+        </a>
+      </div>
+    </header>
+    <div class="side-nav">
+      <nav>
+        <ul>
+          <li class="active">
+            <a href="#">
+              <span><i class="fa fa-home"></i></span>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa fa-envelope"></i></span>
+              <span>Messages</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa fa-folder-open"></i></span>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa fa-bar-chart"></i></span>
+              <span>Analytics</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="fa fa-address-book"></i></span>
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-content">
+      <div class="heading">
+        <h1>Dashboard</h1>
+        <p>Welcome to my portfolio website</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="user-img"><img src="profile_image.jpg" alt="profile_image"></div>
+          <span class="user-name">Heekyung Kim</span>
+          <span class="user-title">Data analyst / Full-Stack Developer</span>
+          <hr/>
+          <div class="major_minor">
+            <div><span>Major:</span><br/>Computer Information system- Data Analytics</div>
+            <div><span>Double Minor:</span><br/>Finance and Economics & Japanese</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="title">Educations</div>
+          <div class="education-wrapper">
+            <span class="school">BBA</span>
+            <span class="location">New York, NY</span>
+            <span class="date">Sep.2015 – Expected Dec.2019</span>
+          </div>
+      </div>
+
+        <div class="card">
+          <div class="title">Project Numbers</div>
+					<div class="chart"></div>
+        </div>
+
+        <div class="card">
+          <div class="title">Recent Activity</div>
+          <div class="chart"></div>
+        </div>
+
+      <div class="card">
+        <div class="title">Activity</div>
+        <div class="chart"></div>
+      </div>
+    </div>
+
+  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</html>
